@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editorial Collage</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  
+  <style> 
+body {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.collage-container {
+    position: relative;
+    width: 600px;
+    height: 900px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.envelope {
+    position: absolute;
+    width: 40%;
+    height: auto;
+    left: 50px;
+    bottom: 300px;
+    object-fit: cover;
+}
+
+.pallet {
+    width: 100px;
+    position: absolute;
+    top: 100px;
+    left: 10px;
+}
+
+.profile {
+    width: 200px;
+    position: absolute;
+    top: 200px;
+    left: -50px;
+}
+
+.taylor {
+    width: 280px;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+}
+
+.cherries {
+    width: 100px;
+    position: absolute;
+    bottom: 350px;
+    right: 30px;
+}
+
+.hands {
+    position: absolute;
+    width: 250px;
+    bottom: 70px;
+    right: 10px;
+}
+
+.kiss {
+    width: 60px;
+    position: absolute;
+    top: 300px;
+    left: 150px;
+}
+
+.ribbon {
+    width: 80px;
+    position: relative;
+    top: 50px;
+    left: 165px;
+
+}
+
+.quote {
+    position: absolute;
+    bottom: 380px;
+    left: -10px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 24px;
+    color: black;
+}
+
+.magazine-title {
+    position: absolute;
+    bottom: 250px;
+    left: 10px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #b22222;
+    font-family: serif;
+}
+
+.magazine-title span {
+    font-size: 48px;
+    color: black;
+}
+
+.magazine-text {
+    position: absolute;
+    bottom: 200px;
+    left: 10px;
+    font-size: 14px;
+    width: 300px;
+  color: black;
+    }
+    
+  </style>
+  <body>
+    <div class="collage-container">
+      <img src="https://i.pinimg.com/736x/eb/e3/f2/ebe3f2b32cf8d3881364b01e102dd692.jpg" class="collage-item pallet" alt="Aesthetic color palette with neutral tones">
+
+      <img src="https://i.pinimg.com/736x/4c/7d/5d/4c7d5dca8f12b7de527d970f15a1fee6.jpg" class="collage-item profile" alt="Woman">
+
+      <img src="https://i.pinimg.com/736x/f1/eb/25/f1eb25f5ff92dd55094bb30b83415964.jpg" class="collage-item taylor russel" alt="Taylor Russell in a minimalist editorial photoshoot">
+
+      <img src="https://i.pinimg.com/736x/5f/d3/52/5fd352b9ce9cbe72b9bfefaa9bf97716.jpg" class="collage-item cherries" alt="Fresh cherries in a clear plastic container">
+
+     
+
+      <img src="https://i.pinimg.com/736x/3f/80/bc/3f80bcb326a748bbbb41840ef57a209a.jpg" class="collage-item hands" alt="Close-up of hands elegantly posed in a dramatic black and white setting">
+
+
+      <p class="quote">In God's Hands</p>
+      <p class="magazine-title">The <span>new</span> Muse</p>
+      <p class="magazine-text">Model ARIZONA MUSE shows off SS15's most exciting accessories...</p>
+      
+      <img src="https://i.pinimg.com/736x/e3/ed/ed/e3eded7ed8853066468fbc26d9f5ff1e.jpg" class="collage-item envelope" alt="Chanel envelope">
+
+      <img src="https://pngimg.com/uploads/kiss/kiss_PNG10818.png" class="collage-item kiss" alt="Red lipstick kiss mark">
+
+      <img src="https://purepng.com/public/uploads/large/purepng.com-red-ribbonribbongiftredbluechristmas-1421526631257sldam.png" class="collage-item ribbon" alt="Decorative red ribbon tied in a bow">
+      
+      
+    </div>
+  </body>
+</html>
