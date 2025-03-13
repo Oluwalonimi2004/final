@@ -9,11 +9,13 @@
   
   <style> 
 body {
-    background-color: #f5f5f5;
+    background-color: #FFFFFF;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    cursor: none; 
+     
 }
 
 .collage-container {
@@ -117,12 +119,32 @@ body {
   color: black;
     }
     
+     .custom-cursor {
+      position: absolute;
+      width: 50px; 
+      height: 50px;
+      background-image: url('https://pngimg.com/uploads/kiss/kiss_PNG10818.png');
+      background-size: cover;
+      pointer-events: none; 
+      transform: translate(-50%, -50%); 
+      z-index: 9999;
+    }
   </style>
   <body>
     <div class="collage-container">
       <img src="https://i.pinimg.com/736x/eb/e3/f2/ebe3f2b32cf8d3881364b01e102dd692.jpg" class="collage-item pallet" alt="Aesthetic color palette with neutral tones">
 
-      <img src="https://i.pinimg.com/736x/4c/7d/5d/4c7d5dca8f12b7de527d970f15a1fee6.jpg" class="collage-item profile" alt="Woman">
+      <img src="https://i.pinimg.com/736x/4c/7d/5d/4c7d5dca8f12b7de527d970f15a1fee6.jpg" 
+           class="collage-item profile" 
+           alt="Woman"   
+           id="woman">
+
+<script>
+  document.getElementById('woman').addEventListener('click', () => {
+    alert('Me vs My Profile');
+    window.open('https://oluwalonimi2004.github.io/RedesignIGMevMy/', '_blank');
+  });
+</script>
 
       <img src="https://i.pinimg.com/736x/f1/eb/25/f1eb25f5ff92dd55094bb30b83415964.jpg" class="collage-item taylor russel" alt="Taylor Russell in a minimalist editorial photoshoot">
 
@@ -137,7 +159,17 @@ body {
       <p class="magazine-title">The <span>new</span> Muse</p>
       <p class="magazine-text">Model ARIZONA MUSE shows off SS15's most exciting accessories...</p>
       
-      <img src="https://i.pinimg.com/736x/e3/ed/ed/e3eded7ed8853066468fbc26d9f5ff1e.jpg" class="collage-item envelope" alt="Chanel envelope">
+    <img src="https://i.pinimg.com/736x/e3/ed/ed/e3eded7ed8853066468fbc26d9f5ff1e.jpg" 
+     class="collage-item envelope" 
+     id="envelope"
+     alt="Chanel envelope">
+
+<script>
+  document.getElementById('envelope').addEventListener('click', () => {
+    alert('You clicked the envelope!');
+    window.open('https://oluwalonimi2004.github.io/Dearest-Internet/', '_blank');
+  });
+</script>
 
       <img src="https://pngimg.com/uploads/kiss/kiss_PNG10818.png" class="collage-item kiss" alt="Red lipstick kiss mark">
 
@@ -145,6 +177,16 @@ body {
       
       
     </div>
+    <div class="custom-cursor" id="cursor"></div>
+
+<script>
+  const cursor = document.getElementById('cursor');
+
+
+  document.addEventListener('mousemove', (e) => {
+    cursor.style.left = `${e.clientX}px`;
+    cursor.style.top = `${e.clientY}px`;
+  });
+</script>
   </body>
-</html>
 </html>
